@@ -27,7 +27,7 @@ include /etc/sway/config-vars.d/*
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
-output HDMI-A-2 transform 270
+#output HDMI-A-2 transform 270
 #
 # Example configuration:
 #
@@ -84,6 +84,11 @@ output HDMI-A-2 transform 270
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
+
+    # Lock this screen
+    bindsym $mod+Control+l exec swaylock -c 000000
+    # Suspend this machine
+    bindsym $mod+Shift+p exec 'systemctl suspend' 
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
