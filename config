@@ -30,6 +30,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # Config A for home setup
 output HDMI-A-1 resolution 1920x1080 position 0 0
 output HDMI-A-2 resolution 1920x1080 position 1920 0
+output eDP-1 resolution 1920x1080 position 1920 1080
 #output HDMI-A-2 transform 270
 #
 # Example configuration:
